@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>echo.js图像延迟</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="X-UA-Compatible"content="IE=EDGE">
+<meta name="renderer" content="webkit">
+<style>
+.demo img { width: 736px; height: 490px; border: 0;background: url(images/loading.gif) 50% no-repeat;}
+h1 {margin: 40px; font: 32px Microsoft Yahei; text-align: center;}
+</style>
+</head>
+
+<body>
+<h1>echo.js图像延迟</h1>
+<div class="demo" style="width: 736px; margin: 0 auto;">
+	<img class="lazy" src="../../images/blank.gif" data-echo="images/load1.jpg">
+	<img class="lazy" src="../../images/blank.gif" data-echo="images/load2.jpg">
+	<img class="lazy" src="../../images/blank.gif" data-echo="images/load3.jpg">
+	<img class="lazy" src="../../images/blank.gif" data-echo="images/load4.jpg">
+	<img class="lazy" src="../../images/blank.gif" data-echo="images/load5.jpg">
+	<img class="lazy" src="../../images/blank.gif" data-echo="images/load6.jpg">
+</div>
+
+<script src="js/echo.min.js"></script>
+<script>
+Echo.init({
+	offset: 200,
+	throttle: 0
+});
+</script>
+
+
+</body>
+</html>
